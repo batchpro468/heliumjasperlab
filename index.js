@@ -1,6 +1,6 @@
 'use strict';
 const os = require('os');
-const APP_NAME = 'status-checker-5fd17f';
+const APP_NAME = 'status-checker-00bc7d';
 const VERSION = '1.0.0';
 class UstatusUcheckerHandler {
   constructor(options = {}) {
